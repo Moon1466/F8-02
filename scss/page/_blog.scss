@@ -1,0 +1,121 @@
+.blog {
+    margin-top: 135px;
+    padding: 96px 0;
+    background: #fffcf4;
+
+    &__top {
+        text-align: center;
+    }
+
+    &__heading {
+        font-size: 3.8rem;
+        line-height: 1.26;
+        font-family: var(--heading-font);
+        font-weight: 700;
+        letter-spacing: -0.02em;
+        color: #171100;
+    }
+
+    &__desc {
+        margin: 16px auto 0;
+        font-size: 1.6rem;
+        line-height: 1.75;
+        color: #696262;
+        width: 448px;
+    }
+
+    &__list {
+        display: flex;
+        margin-top: 55px;
+        gap: 30px;
+    }
+
+    &__item {
+        width: calc(33.333% - 20px);
+        background: #fff;
+        border-radius: 16px;
+
+        &:hover {
+            box-shadow: 0 16px 32px rgba(0, 0, 0, 0.05);
+        }
+    }
+
+    &__thumb {
+        height: 250px;
+        object-fit: cover;
+        width: 100%;
+        border-radius: 16px 16px 0 0;
+    }
+
+    &__info {
+        padding: 20px 20px 28px;
+    }
+
+    &__date {
+        display: inline-flex;
+        align-items: center;
+        font-size: 1.4rem;
+        line-height: 1.86;
+        color: #5f5b53;
+        position: relative;
+        padding: 12px;
+
+        &:before {
+            content: "";
+            display: inline-block;
+            margin-right: 4px;
+            border-radius: 50%;
+            width: 6px;
+            height: 6px;
+            background: var(--primary);
+        }
+
+        &:after {
+            content: "";
+            display: inline-block;
+            width: 160px;
+            height: 1px;
+            background-image: #e2dfea;
+            border-radius: 0.5px;
+            position: absolute;
+            left: 0;
+            bottom: 0px;
+            right: -27px;
+        }
+    }
+
+    &__link {
+        margin: 12px 0;
+        display: inline-block;
+        font-weight: 600;
+        font-size: 1.6rem;
+        line-height: 1.75;
+        color: #171100;
+    }
+
+    &__btn {
+        font-size: 1.4rem;
+        &:hover {
+            background: var(--primary);
+        }
+    }
+
+    &__dots {
+        display: flex;
+        gap: 6px;
+        justify-content: center;
+        margin-top: 38px;
+    }
+
+    &__dot {
+        width: 6px;
+        height: 6px;
+        background: #5f5b53;
+        border-radius: 50%;
+
+        &.active{
+            background: var(--primary);
+            cursor: pointer;
+        }
+    }
+}

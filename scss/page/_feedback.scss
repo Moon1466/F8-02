@@ -1,0 +1,55 @@
+.feedback {
+    margin-top: 135px;
+    padding: 96px 0;
+    background: #2e2100;
+
+    &__item {
+        display: flex;
+    }
+
+    &__avatar {
+        width: 72px;
+        height: 72px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    &__title{
+        margin-top: 18px;font-weight: 700;
+        font-size: 2.4rem;line-height: 1.42;color: #f7f7f7;
+        font-family: var(--heading-font);
+    }
+    &__desc{
+        margin-top: 4px;
+        font-size: 1.4rem;line-height: 1.86;color: #bfbcb3;
+    }
+
+    &__dots{
+        display: flex;
+        margin-top: 28px;
+    }
+    &__dot{
+        width: 6px;height: 6px;border-radius: 50%;
+        background: #634700;
+        margin-right: 6px;
+        cursor: pointer;
+
+        &.active{
+            background: var(--primary);
+        }
+    }
+
+    &__content{
+        width: 66%;
+        margin-left: auto;
+    }
+
+    &__respond{
+        margin-left: 30px;
+        font-style: italic;
+        font-weight: 400;
+        font-size: 2.6rem;
+        line-height: 1.54;
+        color: #fff;
+    }
+}

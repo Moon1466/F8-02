@@ -1,0 +1,23 @@
+.btn {
+    display: inline-block;
+
+    min-width: 118px;
+    padding: 0 16px;
+    font-weight: 600;
+    font-size: 1.6rem;
+    color: #fff;
+    background: #171100;
+    border-radius: 999px;
+    text-align: center;
+    line-height: 50px;
+
+    &:hover {
+        opacity: 0.9;
+    }
+
+    &--sign-up {
+        min-width: 144px;
+    }
+
+    
+}
